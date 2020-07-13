@@ -37,18 +37,27 @@ root                  *  /usr/local/anaconda3
 
 **NOTE** on [`environment.yml`](./environment.yml):
 
-I ran into a couple of issues in using the original `environment.yml` file as provided by the [Udacity repo](https://github.com/udacity/CarND-Object-Detection-Lab).
+I ran into a few issues in using the original `environment.yml` file as provided by the [Udacity repo](https://github.com/udacity/CarND-Object-Detection-Lab) on my system (Mac Book Pro/MacOS Catalina 10.15.5):
 
 1) First of all, I got an `UnsatisfiableError` during the building process, analogusly to what reported in this [issue](https://knowledge.udacity.com/questions/55633). I solved it following the indications reported there, i.e. moving all the python dependencies in the `pip` section of my file.
-2) I got a `cannot import name 'AsyncGenerator` error while running the notebook from the environment. According to [this post](https://stackoverflow.com/questions/60927504/cannot-get-jupyter-notebook-to-run-cannot-import-name-asyncgenerator) on Stack Overflow this was due to the Python version. I updated from 3.6 to 3.6.1 and that fixed it.
+2) I got a `cannot import name 'AsyncGenerator` error while running the notebook from the environment. According to [this post](https://stackoverflow.com/questions/60927504/cannot-get-jupyter-notebook-to-run-cannot-import-name-asyncgenerator) on Stack Overflow this was due to the Python version. I updated from 3.6 to 3.6.1 and that fixed the error.
+3) However, with python 3.6.1 I got the following error message when trying to import Tensorflow in the first cell of the notebook:
 
+```sh
+   /miniconda3/envs/carnd-advdl-odlab/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+```
 
-Further documentation on [working with Anaconda environments](https://conda.io/docs/using/envs.html#managing-environments). 
+After some research on the error I decided to actually downgrade to python 3.5.1. This seems to have fixed the errors and allows the notebook to run (even if I still receive some warnings when importing some of the libraries)
+
+### More on Conda
+
+Further documentation on working with Anaconda environments can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). 
 
 Particularly useful sections:
 
-https://conda.io/docs/using/envs.html#change-environments-activate-deactivate
-https://conda.io/docs/using/envs.html#remove-an-environment
+* [Activate an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment)
+* [Deactivate an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#deactivating-an-environment)
+* [Remove an evironment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#removing-an-environment)
 
 
 ### Resources
