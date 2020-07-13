@@ -47,7 +47,7 @@ I ran into a few issues in using the original `environment.yml` file as provided
    /miniconda3/envs/carnd-advdl-odlab/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
 ```
 
-After some research on the error I decided to actually downgrade to python 3.5.2. This seems to have fixed the errors and allows the notebook to run (even if I still receive some warnings when importing some of the libraries)
+After some research on the error I decided to actually downgrade to python 3.5.2. This seems to have fixed the errors and allows the notebook to run (even if I still receive some warnings when importing some of the libraries).
 
 ### More on Conda
 
