@@ -9,7 +9,7 @@
 This is a local copy of a [Udacity lab](https://github.com/udacity/CarND-Object-Detection-Lab) aimed at:
 
 * Learning about *MobileNets* and separable depthwise convolutions.
-* The SSD (Single Shot Detection) architecture used for object detection
+* Introducing the SSD (Single Shot Detection) architecture used for object detection
 * Using pretrained TensorFlow object detection inference models to detect objects
 * Using different architectures and weigh the tradeoffs.
 * Applying an object detection pipeline to a video.
