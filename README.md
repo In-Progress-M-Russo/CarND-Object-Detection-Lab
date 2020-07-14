@@ -62,7 +62,11 @@ Particularly useful sections:
 
 ### Resources
 
-* TensorFlow object detection [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
+**IMPORTANT NOTE** on TensorFlow Model zoo: the original [Udacity lab](https://github.com/udacity/CarND-Object-Detection-Lab) used to meake reference to the TensorFlow object detection [_model zoo_](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). However, around July 2020 TensorFlow released the [model garden](https://github.com/tensorflow/models) that seems to have superseded the "zoo": at the moment I'm writing (mid-July 2020) the previous link is actually not accessible anymore. However, tho specific zoos are now available, one for [TensorFlow V1](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md) and one for [TensorFlow V2](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md).
+
+The models refernced in the Jupyter notebook are still accessible and make reference to V1, so I have updated all the linke here in the readme and inn the Julpyter notebook itself with the reference to the V1 zoo.
+
+* TensorFlow **V1** object detection [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md)
 * [Driving video](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/advanced_deep_learning/driving.mp4)
 
 ### Tips
