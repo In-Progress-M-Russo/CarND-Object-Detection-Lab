@@ -47,7 +47,7 @@ I ran into a few issues in using the original `environment.yml` file as provided
    /miniconda3/envs/carnd-advdl-odlab/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
 ```
 
-4) After some research on the error I tried to downgrade to python 3.5.2. This seemed to have fixed the errors, but _considering also what I found out on the TF Model Zoo (see note below)_ I actually resorted to update TF to 1.12.0. 
+4) After some research on the error I tried to downgrade to python 3.5.2. This seemed to fix the errors, but _considering also what I found out on the TF Model Zoo (see [note](https://github.com/In-Progress-M-Russo/CarND-Object-Detection-Lab/blob/master/README.md#resources) below)_ I actually resorted to update TF to 1.12.0. 
 
 The environment generated from the current file allows the the notebook to run and the models to be compared, even if I still receive some warnings when loading libraries in the first cell.
 
