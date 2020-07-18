@@ -40,7 +40,7 @@ root                  *  /usr/local/anaconda3
 I ran into a few issues in using the original `environment.yml` file as provided by the [Udacity repo](https://github.com/udacity/CarND-Object-Detection-Lab) on my system (Mac Book Pro/MacOS Catalina 10.15.5):
 
 1) First of all, I got an `UnsatisfiableError` during the building process, analogusly to what reported in this [issue](https://knowledge.udacity.com/questions/55633). I solved it following the indications reported there, i.e. moving all the python dependencies in the `pip` section of my file.
-2) I got a `cannot import name 'AsyncGenerator` error while running the notebook from the environment. According to [this post](https://stackoverflow.com/questions/60927504/cannot-get-jupyter-notebook-to-run-cannot-import-name-asyncgenerator) on Stack Overflow this was due to the Python version. I updated from 3.6 to 3.6.1 and that fixed the error.
+2) I got a `cannot import name 'AsyncGenerator'` error while running the notebook from the environment. According to [this post](https://stackoverflow.com/questions/60927504/cannot-get-jupyter-notebook-to-run-cannot-import-name-asyncgenerator) on Stack Overflow this was due to the Python version. I updated from 3.6 to 3.6.1 and that fixed the error.
 3) However, with python 3.6.1 I got the following error message when trying to import Tensorflow in the first cell of the notebook:
 
 ```sh
