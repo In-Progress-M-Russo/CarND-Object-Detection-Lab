@@ -14,9 +14,9 @@ This is a local copy of a [Udacity lab](https://github.com/udacity/CarND-Object-
 * Using different architectures and weigh the tradeoffs.
 * Applying an object detection pipeline to a video.
 
-The jupyter notebbok contains exercise on all of the above.
+The jupyter notebook contains exercises on all of the above.
 
-Furthermore, I have added a section decribing how to use the TensorFlow API to fine-tune and retrain the available models to identifyspecific classes from a new dataset, namely traffic lights' state.  
+Furthermore, I have added a section decribing how to use the TensorFlow API to fine-tune and retrain the available models to identify specific classes from a new dataset, namely traffic lights' state.  
 
 ### Requirements
 
