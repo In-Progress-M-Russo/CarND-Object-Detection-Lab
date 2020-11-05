@@ -16,6 +16,8 @@ This is a local copy of a [Udacity lab](https://github.com/udacity/CarND-Object-
 
 The jupyter notebbok contains exercise on all of the above.
 
+Furthermore, I have added a section decribing how to use the TensorFlow API to fine-tune and retrain the available models to identifyspecific classes from a new dataset, namely traffic lights' state.  
+
 ### Requirements
 
 Install environment with [Anaconda](https://www.continuum.io/downloads):
@@ -32,7 +34,8 @@ The environment should be listed via `conda info --envs`:
 # conda environments:
 #
 carnd-advdl-odlab        /usr/local/anaconda3/envs/carnd-advdl-odlab
-root                  *  /usr/local/anaconda3
+...
+
 ```
 
 **NOTE** on [`environment.yml`](./environment.yml):
@@ -47,9 +50,9 @@ I ran into a few issues in using the original `environment.yml` file as provided
    /miniconda3/envs/carnd-advdl-odlab/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
 ```
 
-4) After some research on the error I tried to downgrade to python 3.5.2. This seemed to fix the errors, but _considering also what I found out on the TF Model Zoo (see [note](https://github.com/In-Progress-M-Russo/CarND-Object-Detection-Lab/blob/master/README.md#resources) below)_ I actually resorted to update TF to 1.12.0. 
+4) After some research on the error I tried to downgrade to python 3.5.2. This seemed to fix the errors, but _considering also what I found out on the TF Model Zoo (see [note](https://github.com/In-Progress-M-Russo/CarND-Object-Detection-Lab/blob/master/README.md#resources) below)_ I actually resorted to update TF to 1.15.2. 
 
-The environment generated from the current file allows the the notebook to run and the models to be compared, even if I still receive some warnings when loading libraries in the first cell.
+The environment generated from the current file allows the the notebook to run and the models to be compared, even if I still receive some warnings for some cells.
 
 ### More on Conda
 
@@ -66,7 +69,7 @@ Particularly useful sections:
 
 **IMPORTANT NOTE** on TensorFlow Model zoo: the original [Udacity lab](https://github.com/udacity/CarND-Object-Detection-Lab) used to make reference to the TensorFlow object detection [_model zoo_](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). However, around July 2020 TensorFlow released the [model garden](https://github.com/tensorflow/models) that seems to have superseded the "zoo": at the moment I'm writing (mid-July 2020) the previous link to the zoo is actually not accessible anymore. However, two _specific_ zoos are now available, one for [TensorFlow V1](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md) and one for [TensorFlow V2](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md).
 
-The models referenced in the original notebook were generated with TF V1, and they are still accessible (the links are still working), however I updated all the links here in the readme and in the Julpyter notebook itself pointing to the model zoo with the reference to the current V1 zoo. Furthermore, given that the models in the current zoo have been generated with TF 1.12.0, I updated the [`environment.yml`](./environment.yml) file accordingly.
+The models referenced in the original notebook were generated with TF V1, and they are still accessible (the links are still working), however I updated all the links here in the readme and in the Julpyter notebook itself pointing to the model zoo with the reference to the current V1 zoo. Furthermore, [this](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md) says that the models in the current zoo have been generated with TF 1.12.0, BUT when I used the available [Dockerfile](https://github.com/tensorflow/models/blob/master/research/object_detection/dockerfiles/tf1/Dockerfile) to set up a training enbvironment I realised that the reference image uses  TF 1.15.2, so I updated the [`environment.yml`](./environment.yml) file accordingly.
 
 * TensorFlow **V1** object detection [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md)
 * [Driving video](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/advanced_deep_learning/driving.mp4)
