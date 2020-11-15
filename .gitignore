@@ -4,3 +4,4 @@ __pycache__
 .ipynb_checkpoints
 
 models/
+further_refined_models/
