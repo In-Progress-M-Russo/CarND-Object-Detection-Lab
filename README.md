@@ -3,7 +3,6 @@
 
 ![](assets/clip.gif)
 
----
 ## Overview
 
 This is a local copy of a [Udacity lab](https://github.com/udacity/CarND-Object-Detection-Lab) aimed at:
