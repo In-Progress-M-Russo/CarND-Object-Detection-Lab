@@ -19,7 +19,7 @@ Furthermore, I have added a section decribing how to use the TensorFlow API to f
 
 ### Requirements
 
-Install environment with [Anaconda](https://www.continuum.io/downloads):
+Install environment with [Anaconda](https://www.anaconda.com/):
 
 ```sh
 conda env create -f environment.yml
